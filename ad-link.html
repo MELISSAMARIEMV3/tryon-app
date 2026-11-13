@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Try On — Ad link</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23115e59'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="ad-link">
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Try On</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="photo.html">Photo</a>
+      <a href="ad-link.html" aria-current="page">Ad link</a>
+      <a href="try-on.html">Try it on</a>
+      <a href="measurements.html">Measurements</a>
+      <a href="size.html">Size</a>
+    </nav>
+  </header>
+  <div class="wrap">
+    <nav class="progress" aria-label="Progress">
+      <ol class="steps">
+        <li data-step="photo"><a href="photo.html"><span class="step-index">1</span> Photo</a></li>
+        <li class="is-current" data-step="link"><a href="ad-link.html" aria-current="step"><span class="step-index">2</span> Ad link</a></li>
+        <li data-step="try"><a href="try-on.html"><span class="step-index">3</span> Try it on</a></li>
+      </ol>
+    </nav>
+    <main id="content">
+      <h1>Paste a clothing link</h1>
+      <p class="lede">Step 2 of 3. Add the address of a clothing ad or product page. It is saved in this tab only.</p>
+      <form id="ad-form" novalidate>
+        <div class="field">
+          <label for="ad-url">Ad or product link</label>
+          <input id="ad-url" name="ad-url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="https://" aria-describedby="ad-message">
+        </div>
+        <p id="ad-message" class="hint" role="status"></p>
+        <p class="actions"><button class="button" type="submit">Next</button></p>
+      </form>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>Photos and links stay in this browser tab. Measurements stay on this device. Nothing is uploaded.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

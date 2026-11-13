@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Try On — Try it on</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23115e59'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="try-on">
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Try On</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="photo.html">Photo</a>
+      <a href="ad-link.html">Ad link</a>
+      <a href="try-on.html" aria-current="page">Try it on</a>
+      <a href="measurements.html">Measurements</a>
+      <a href="size.html">Size</a>
+    </nav>
+  </header>
+  <div class="wrap">
+    <nav class="progress" aria-label="Progress">
+      <ol class="steps">
+        <li data-step="photo"><a href="photo.html"><span class="step-index">1</span> Photo</a></li>
+        <li data-step="link"><a href="ad-link.html"><span class="step-index">2</span> Ad link</a></li>
+        <li class="is-current" data-step="try"><a href="try-on.html" aria-current="step"><span class="step-index">3</span> Try it on</a></li>
+      </ol>
+    </nav>
+    <main id="content">
+      <h1>Try it on</h1>
+      <p class="lede">Step 3 of 3. This step is a placeholder. Nothing is generated yet.</p>
+      <section class="panel is-placeholder" aria-labelledby="tryon-message">
+        <p class="flag">Coming soon</p>
+        <p class="placeholder-label">Placeholder</p>
+        <p class="panel-message" id="tryon-message">Your avatar wearing the outfit will appear here</p>
+        <h2>Your photo</h2>
+        <figure class="photo-frame" id="tryon-photo-frame" hidden>
+          <img id="tryon-photo" alt="Full-body photo you added">
+          <figcaption>Saved in this tab</figcaption>
+        </figure>
+        <p id="tryon-photo-missing">No photo yet. <a href="photo.html">Add a full-body photo</a>.</p>
+        <h2>Ad link</h2>
+        <p id="tryon-link" class="break">No link yet. <a href="ad-link.html">Paste a product link</a>.</p>
+        <p class="hint">A saved link stays in this tab. This page does not open or read it.</p>
+      </section>
+      <p class="actions">
+        <a class="button button-secondary" href="size.html">Suggested size</a>
+        <a href="measurements.html">Measurements (optional)</a>
+      </p>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>Photos and links stay in this browser tab. Measurements stay on this device. Nothing is uploaded.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

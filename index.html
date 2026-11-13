@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Try On — Welcome</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23115e59'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Try On</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="photo.html">Photo</a>
+      <a href="ad-link.html">Ad link</a>
+      <a href="try-on.html">Try it on</a>
+      <a href="measurements.html">Measurements</a>
+      <a href="size.html">Size</a>
+    </nav>
+  </header>
+  <div class="wrap">
+    <nav class="progress" aria-label="Progress">
+      <ol class="steps">
+        <li data-step="photo"><a href="photo.html"><span class="step-index">1</span> Photo</a></li>
+        <li data-step="link"><a href="ad-link.html"><span class="step-index">2</span> Ad link</a></li>
+        <li data-step="try"><a href="try-on.html"><span class="step-index">3</span> Try it on</a></li>
+      </ol>
+    </nav>
+    <main id="content">
+      <h1>Try clothes on a photo of you</h1>
+      <p class="lede">A simple starter for a virtual fitting room. Everything stays in your browser.</p>
+      <ol class="step-list">
+        <li><strong>Photo.</strong> Add a full-body photo of yourself.</li>
+        <li><strong>Ad link.</strong> Paste a clothing ad or product link.</li>
+        <li><strong>Try it on.</strong> See that outfit on you. This step is coming soon.</li>
+      </ol>
+      <p class="actions"><a class="button" href="photo.html">Start</a></p>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>Photos and links stay in this browser tab. Measurements stay on this device. Nothing is uploaded.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
